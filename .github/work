@@ -1,1 +1,70 @@
+# Sample .bashrc for SUSE Linux
+# Copyright (c) SUSE Software Solutions Germany GmbH
+##########################################################################
+#								     	#
+#								     	#
+#           d8888b.  .d8b.  .d8888. db   db d8888b.  .o88b.              #
+#            88  `8D d8  `8b 88'  YP 88   88 88  `8D d8P  Y8	     	#
+#            88oooY" 88ooo88 `8bo.   88ooo88 88oobY' 8P      	        #
+#            88~~~b. 88~~~88   `Y8b. 88~~~88 88`8b   8b   	        #
+#  db        88   8D 88   88 db   8D 88   88 88 `88. Y8b  d8		#
+#  VP        Y8888P" YP   YP `8888Y  YP   YP 88   YD  `Y88P'		#
+#									#
+#                           .,,uod8B8bou,,.				#
+#                  ..,uod8BBBBBBBBBBBBBBBBRPFT?l!i:.			#
+#             ,=m8BBBBBBBBBBBBBBBRPFT?!||||||||||||||			#
+#             !...:!TVBBBRPFT||||||||||!!^^"     ||||			#
+#             !.......:!?|||||!!^^"              ||||			#
+#             !.........||||                     ||||			#
+#             !.........||||  $>_                ||||			#
+#             !.........||||                     ||||			#
+#             !.........||||                     ||||			#
+#             !.........||||                     ||||			#
+#             !.........||||                     ||||			#
+#             `.........||||                    ,||||			#
+#              .;.......||||               _.-!!|||||			#
+#        .,uodWBBBBb.....||||       _.-!!|||||||||!:'			#
+#    !YBBBBBBBBBBBBBBb..!|||:..-!!|||||||!iof68BBBBBb....		#
+#    !..YBBBBBBBBBBBBBBb!!||||||||!iof68BBBBBBRPFT?!::   `.		#
+#    !....YBBBBBBBBBBBBBBbaaitf68BBBBBBRPFT?!:::::::::     `.		#
+#    !......YBBBBBBBBBBBBBBBBBBBRPFT?!::::::;:!^"`;:::       `.		#
+#    !........YBBBBBBBBBBRPFT?!::::::::::^'|...::::::;         iBBbo.    #
+#    `..........YBRPFT?!::::::::::::::::::::::::;iof68bo.      WBBBBbo.  #
+#      `..........:::::::::::::::::::::::;iof688888888888b.     `YBBBP^' #
+#        `........::::::::::::::::;iof688888888888888888888b.     `	#
+#          `......:::::::::;iof688888888888888888888888888888b.		#
+#            `....:::;iof688888888888888888888888888888888899fT!	#
+#              `..::!8888888888888888888888888888888899fT|!^"'		#
+#                `  !!988888888888888888888888899fT|!^"'		#
+#                    `!!8888888888888888899fT|!^"'			#
+#                      `!988888888899fT|!^"'				#
+#                        `!9899fT|!^"'					#
+#                          `!^"'					#
+#									#
+#									#
+##########################################################################
+#
+# »»——————————————————- ♥ Variables »»————————————————- ♥
+# - configuration/other -
+test -s ~/.alias && . ~/.alias || true
+export NO_AT_BRIDGE=1
+# - directories -
 
+# »»——————————————————- ♥ Greeting »»————————————————- ♥
+#echo -e "\e[34m"
+#figlet -f mini "				welcome"
+#echo -e "\e[35m"
+#figlet -f bloody "					pseud  "
+#echo -e "\e[33m----------------8<-------------[ cut here ]------------------>"
+#echo -e "\e[36m"
+#date +"			it's %r on a %A  "
+#echo -e "\e[0m"
+neofetch
+# »»——————————————————- ♥ pywal »»————————————————- ♥
+#(cat ~/.cache/wal/sequences &)
+
+# Alternative (blocks terminal for 0-3ms)
+#cat ~/.cache/wal/sequences
+
+# To add support for TTYs this line can be optionally added.
+source ~/.cache/wal/colors-tty.sh
